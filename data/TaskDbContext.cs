@@ -9,5 +9,6 @@ namespace TaskManagerAPI.Data
         public TaskDbContext(DbContextOptions<TaskDbContext> options) : base(options) { }
 
         public DbSet<TaskItem> Tasks { get; set; }  // Represents the "Tasks" table in the DB
+        public DbSet<User> Users { get; set; } // Add Users table
     }
 }
